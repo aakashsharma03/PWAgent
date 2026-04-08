@@ -1,0 +1,34 @@
+{
+  "name": "agenticpw",
+  "version": "1.0.0",
+  "description": "Production-grade Playwright + TypeScript E-commerce Checkout Automation Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:critical": "playwright test --grep @critical",
+    "test:validation": "playwright test --grep @validation",
+    "test:checkout": "playwright test tests/checkout",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "test:chrome": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "e-commerce",
+    "checkout",
+    "pom"
+  ],
+  "author": "Automation Architect",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.5.2"
+  }
+}
